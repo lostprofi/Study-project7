@@ -195,7 +195,7 @@ let data = {
 
             {
                 'data-src': '#modal-24',
-                src: 'img/onesie.png',
+                src: 'img/the-carter.png',
                 alt: 'onesie',
                 class: 'onesie',
                 id: 'modal-24',
@@ -276,6 +276,7 @@ btn.addEventListener('click', ()=>{
     i=i+1;
     
     //надо сделать добавление i пока оно меньше или равно данных
+    //проба для git
       
     
 });
