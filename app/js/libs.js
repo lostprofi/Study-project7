@@ -195,7 +195,7 @@ let data = {
 
             {
                 'data-src': '#modal-24',
-                src: 'img/the-carter.png',
+                src: 'img/onesie.png',
                 alt: 'onesie',
                 class: 'onesie',
                 id: 'modal-24',
