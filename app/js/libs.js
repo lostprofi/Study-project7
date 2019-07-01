@@ -214,17 +214,21 @@ let data = {
 };
 
 let i = 0;
-  
 
-btn.addEventListener('click', ()=>{
+
+
+
+const lazyLoad = ()=>{
     
-   data.products[i].forEach(el => {
+try {   
+    
+     data.products[i].forEach(el => {
     
     //console.log(el);
     
-   const a = template.cloneNode(true);
+    const a = template.cloneNode(true);
     
-    a.setAttribute('class', 'product col-4');
+    //a.setAttribute('class', 'product col-4');
     a.setAttribute('data-lazy', 'lazy-style');
     
    let productPhoto = a.querySelector('.product-photo');
@@ -275,9 +279,33 @@ btn.addEventListener('click', ()=>{
     
     i=i+1;
     
-    //надо сделать добавление i пока оно меньше или равно данных
-    //проба для git
-      
+    }
     
-});
+    
+    catch {
+        btn.removeEventListener('click', lazyLoad);
+        let text = document.createElement('p');
+        text.setAttribute('class', 'lazy-over container');
+        //text.innerHTML = "Sorry, but the products ran out";
+        document.querySelector('.row-lazy-load').appendChild(text);
+        btn.innerHTML = 'Sorry, but the products ran out';
+        btn.addEventListener('click', color);
+        
+    }
+
+}
+
+btn.addEventListener('click', lazyLoad);
+
+let color1 = ()=> {
+    btn.style.background = 'green';
+}
+
+let color = () => {
+    btn.style.background = "red";
+    btn.removeEventListener('click', color);
+    btn.addEventListener('click', color1);
+}
+
+
 

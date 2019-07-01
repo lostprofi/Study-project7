@@ -7115,25 +7115,96 @@ section > div {
       -ms-flex-preferred-size: 22.9%;
           flex-basis: 22.9%; }
 
+.lazy-btn-border {
+  padding: 1px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(231, 83, 41, 0.83)), color-stop(99%, rgba(217, 79, 40, 0.83)));
+  background: -webkit-linear-gradient(bottom, rgba(231, 83, 41, 0.83) 0%, rgba(217, 79, 40, 0.83) 99%);
+  background: -o-linear-gradient(bottom, rgba(231, 83, 41, 0.83) 0%, rgba(217, 79, 40, 0.83) 99%);
+  background: linear-gradient(0deg, rgba(231, 83, 41, 0.83) 0%, rgba(217, 79, 40, 0.83) 99%);
+  display: inline-block;
+  margin: 22px auto; }
+  .lazy-btn-border:hover {
+    padding: 1px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(139, 139, 139, 0.83)), color-stop(99%, rgba(129, 129, 129, 0.83)));
+    background: -webkit-linear-gradient(bottom, rgba(139, 139, 139, 0.83), rgba(129, 129, 129, 0.83) 99%);
+    background: -o-linear-gradient(bottom, rgba(139, 139, 139, 0.83), rgba(129, 129, 129, 0.83) 99%);
+    background: linear-gradient(0deg, rgba(139, 139, 139, 0.83), rgba(129, 129, 129, 0.83) 99%); }
+  .lazy-btn-border .lazy-btn {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#e84621), color-stop(86%, #fd5f37));
+    background-image: -webkit-linear-gradient(bottom, #e84621 0%, #fd5f37 86%);
+    background-image: -o-linear-gradient(bottom, #e84621 0%, #fd5f37 86%);
+    background-image: linear-gradient(0deg, #e84621 0%, #fd5f37 86%);
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    padding: 1px 19px 3px 13px;
+    margin: 0;
+    background-color: none;
+    -webkit-box-shadow: 0 2px 3px 0 rgba(223, 81, 40, 0.48);
+            box-shadow: 0 2px 3px 0 rgba(223, 81, 40, 0.48);
+    -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.53);
+            box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.53);
+    border: none;
+    font-family: Terminal Dosis Book;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: white;
+    cursor: pointer;
+    outline: none; }
+    .lazy-btn-border .lazy-btn:hover {
+      background-image: -webkit-gradient(linear, left bottom, left top, from(#878787), color-stop(87%, darkgray));
+      background-image: -webkit-linear-gradient(bottom, #878787 0%, darkgray 87%);
+      background-image: -o-linear-gradient(bottom, #878787 0%, darkgray 87%);
+      background-image: linear-gradient(0deg, #878787 0%, darkgray 87%);
+      -webkit-box-shadow: 0 2px 3px 0 rgba(223, 81, 40, 0.48);
+              box-shadow: 0 2px 3px 0 rgba(223, 81, 40, 0.48);
+      -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.53);
+              box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.53); }
+
+.lazy-over {
+  font-family: Terminal Dosis Book;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: white;
+  color: black;
+  padding-top: 22px;
+  font-size: 18px;
+  line-height: 13px;
+  text-align: center; }
+
 @font-face {
   font-family: "Chelsea Market";
-  src: url(../fonts/Chelsea_Market_Regular.ttf) format("truetype"); }
+  src: url(../fonts/Chelsea_Market_Regular.ttf) format("truetype");
+  font-display: block; }
 
 @font-face {
   font-family: "Telegrafico";
-  src: url(../fonts/Telegrafico.ttf) format("truetype"); }
+  src: url(../fonts/Telegrafico.ttf) format("truetype");
+  font-display: block; }
 
 @font-face {
   font-family: "Terminal Dosis Book";
-  src: url(../fonts/Terminal_Dosis_Book.ttf) format("truetype"); }
+  src: url(../fonts/Terminal_Dosis_Book.ttf) format("truetype");
+  font-display: block; }
 
 @font-face {
   font-family: "Terminal Dosis Light";
-  src: url(../fonts/Terminal_Dosis_Light.ttf) format("truetype"); }
+  src: url(../fonts/Terminal_Dosis_Light.ttf) format("truetype");
+  font-display: block; }
 
 @font-face {
   font-family: "Myriad Pro";
-  src: url(../fonts/Myriad_Pro_Regular.otf) format("opentype"); }
+  src: url(../fonts/Myriad_Pro_Regular.otf) format("opentype");
+  font-display: block; }
 
 body {
   width: 1474px;

@@ -544,7 +544,32 @@ section {
     flex-basis: 22.9%;
 }
 
+.lazy-btn-border{
+            @include btn-grad-border(1px, 3px, $main-btn-border);
+            display: inline-block;
+            margin: 22px auto;
+            
+            &:hover{
+                @include btn-grad-border(1px, 3px, $product-btn-border-hover);
+            }
+            
+            .lazy-btn{
+                @include btn($lazy-btn...); 
+                @include font($Terminal_Dosis_5...);
+                cursor: pointer;
+                outline: none;
+            }
+        }
 
+.lazy-over {
+    @include font($Terminal_Dosis_5...);
+   
+    color: black;
+    padding-top: 22px;
+    font-size: 18px;
+    line-height: 13px;
+    text-align: center;
+}
 
 
 
