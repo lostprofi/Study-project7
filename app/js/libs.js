@@ -290,7 +290,7 @@ try {
         document.querySelector('.row-lazy-load').appendChild(text);
         btn.innerHTML = 'Sorry, but the products ran out';
         btn.addEventListener('click', color);
-        
+        i=0;
     }
 
 }
@@ -299,12 +299,24 @@ btn.addEventListener('click', lazyLoad);
 
 let color1 = ()=> {
     btn.style.background = 'green';
+    btn.removeEventListener('click',color1);
+    btn.addEventListener('click', lazyLoad);
+    
 }
 
 let color = () => {
-    btn.style.background = "red";
+    /*btn.style.background = "red";
+    btn.removeEventListener('click', color);*/
+    
+    let lazyRow = document.querySelector('.row-lazy-load');
+    
+    while(lazyRow.firstChild){
+        lazyRow.removeChild(lazyRow.firstChild);
+    }
+    
     btn.removeEventListener('click', color);
     btn.addEventListener('click', color1);
+   
 }
 
 
