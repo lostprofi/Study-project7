@@ -288,7 +288,8 @@ try {
         text.setAttribute('class', 'lazy-over container');
         //text.innerHTML = "Sorry, but the products ran out";
         document.querySelector('.row-lazy-load').appendChild(text);
-        btn.innerHTML = 'Sorry, but the products ran out';
+        text.innerHTML = 'Sorry, but the products ran out';
+        btn.innerHTML = 'Turn aside';
         btn.addEventListener('click', color);
         i=0;
     }
@@ -297,27 +298,20 @@ try {
 
 btn.addEventListener('click', lazyLoad);
 
-let color1 = ()=> {
-    btn.style.background = 'green';
-    btn.removeEventListener('click',color1);
-    btn.addEventListener('click', lazyLoad);
-    
-}
-
 let color = () => {
     /*btn.style.background = "red";
     btn.removeEventListener('click', color);*/
     
-    let lazyRow = document.querySelector('.row-lazy-load');
+    let lazyData = document.querySelector('.row-lazy-load');
     
-    while(lazyRow.firstChild){
-        lazyRow.removeChild(lazyRow.firstChild);
+    while(lazyData.firstChild){
+        lazyData.removeChild(lazyData.firstChild);
     }
     
     btn.removeEventListener('click', color);
-    btn.addEventListener('click', color1);
+    btn.innerHTML = 'Click for more products';
+    
+    btn.addEventListener('click', lazyLoad);
    
 }
-
-
 
