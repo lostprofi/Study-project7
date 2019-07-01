@@ -1,0 +1,16 @@
+.footer-top-content {
+    
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: flex-start;
+    
+    img {
+        max-height: 24px;
+    }
+}
+
+.footer-top-direction {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
