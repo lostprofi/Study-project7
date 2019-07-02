@@ -1,3 +1,11 @@
+.footer-top {
+    background: url(../../img/header-middle-texture.png) rgb(251, 242, 211); /*поменять как в фотошоп*/
+    background-size: cover;
+    box-shadow: 0px 4px 0px 0px rgb(241, 233, 207);
+}
+
+
+
 .footer-top-content {
     
     display: flex;
@@ -6,11 +14,59 @@
     
     img {
         max-height: 24px;
+        margin-right: 10px;
+    }
+    
+    h5{
+        @include font($Telegrafico_4...);
+    }
+    
+    p {
+        @include font($Terminal_Dosis_2...);
     }
 }
 
-.footer-top-direction {
+.footer-wrapper {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+}
+
+
+.footer-middle {
+    margin-top: 4px;
+    background: url(../../img/header-middle-texture.png) rgb(99, 99, 99);
+    box-shadow: 0px 4px 0px 0px rgb(0, 0, 0);
+}
+
+.footer-mid-content {
+    
+    flex-basis: 20%;
+    
+    h5 {
+        @include font($Telegrafico_5...);
+    }
+    
+    p{
+        @include font($Terminal_Dosis_2...);
+        color: rgb(201, 201, 201);
+    }
+    
+    ul {
+        padding-left: 0;
+        li{
+        list-style: none;
+        
+        a{
+            text-decoration: none;
+            @include font($Terminal_Dosis_2...);
+            color: rgb(201, 201, 201);
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    }
+    
+    
 }
