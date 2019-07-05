@@ -1,7 +1,7 @@
 .footer-top {
-    background: url(../../img/header-middle-texture.png) rgb(251, 242, 211); /*поменять как в фотошоп*/
+    background: url(../../img/footer-top-texture.png) rgb(251, 242, 211); /*поменять как в фотошоп*/
     background-size: cover;
-    box-shadow: 0px 4px 0px 0px rgb(241, 233, 207);
+    box-shadow: 0px 5px 0px 0px rgba(222, 213, 183, 0.92);
 }
 
 
@@ -12,17 +12,46 @@
     flex-flow: row nowrap;
     align-content: flex-start;
     
+    padding-top: 15px;
+    padding-bottom: 25px;
+    
     img {
-        max-height: 24px;
-        margin-right: 10px;
+        
+        &[alt = "bulb"]{
+            max-height: 26px;
+            margin-right: 9px;
+            padding-left: 2px;
+            margin-top:5px;
+        }
+        
+        &[alt = "bolt"]{
+            max-height: 28px;
+            margin-top: 5px;
+            margin-left: 12px;
+            margin-right: 9px;
+        }
+        
+        &[alt = "power"]{
+            max-height: 24px;
+            margin-top: 5px;
+            margin-left: 17px;
+            margin-right: 7px;
+        }
+        
+        
     }
     
     h5{
         @include font($Telegrafico_4...);
+        margin-bottom: 1px;
     }
     
     p {
         @include font($Terminal_Dosis_2...);
+        letter-spacing: 0.03;
+        line-height: 24px;
+        padding-left: 1px;
+        padding-top: 1px;
     }
 }
 
@@ -34,7 +63,7 @@
 
 
 .footer-middle {
-    margin-top: 4px;
+    margin-top: 5px;
     background: url(../../img/header-middle-texture.png) rgb(99, 99, 99);
     box-shadow: 0px 4px 0px 0px rgb(0, 0, 0);
 }
