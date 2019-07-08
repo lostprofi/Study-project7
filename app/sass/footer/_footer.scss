@@ -64,27 +64,35 @@
 
 .footer-middle {
     margin-top: 5px;
-    background: url(../../img/header-middle-texture.png) rgb(99, 99, 99);
-    box-shadow: 0px 4px 0px 0px rgb(0, 0, 0);
+    padding-top: 13px;
+    background: url(../../img/footer_mid_back_2.png) no-repeat top rgb(99, 99, 99);
+    box-shadow: inset 0px 5px 9px 0px rgba(0, 0, 0, 0.08);
 }
 
 .footer-mid-content {
     
-    flex-basis: 20%;
+    flex-basis: 19%;
     
     h5 {
         @include font($Telegrafico_5...);
+        margin-bottom: 0;
+        margin-top: 3px;
+        line-height: 22px;
     }
     
     p{
         @include font($Terminal_Dosis_2...);
         color: rgb(201, 201, 201);
+        line-height: 24px;
+        margin-top: 2px;
+        margin-left: 1px;
     }
     
     ul {
         padding-left: 0;
+        margin-top: 2px;
         li{
-        list-style: none;
+            list-style: none;
         
         a{
             text-decoration: none;
@@ -92,10 +100,58 @@
             color: rgb(201, 201, 201);
             &:hover {
                 text-decoration: none;
+                }
             }
         }
     }
+    
+    &:nth-child(2){
+        h5 {
+            margin-left: 14px;
+        }
+        
+        ul {
+            margin-left: 15px;
+            
+        }
     }
+    
+    &:nth-child(3){
+        flex-basis: 22%;
+        
+        h5 {
+            margin-left: 29px;
+        }
+        
+        ul {
+            margin-left: 29px;
+        }
+    }
+    
+    &:nth-child(4){
+        flex-basis: 18%;
+        
+        h5 {
+            margin-left: 14px;
+        }
+        
+        ul {
+            margin-left: 15px;
+        }
+        
+    }
+    
+    &:nth-child(5){
+        h5 {
+            margin-left: 39px;
+        }
+        
+        ul {
+            margin-left: 39px;
+        }
+    }
+    
+ 
     
     
 }

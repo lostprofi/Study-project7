@@ -7259,14 +7259,15 @@ section > div {
 
 .footer-middle {
   margin-top: 5px;
-  background: url(../../img/header-middle-texture.png) #636363;
-  -webkit-box-shadow: 0px 4px 0px 0px black;
-          box-shadow: 0px 4px 0px 0px black; }
+  padding-top: 13px;
+  background: url(../../img/footer_mid_back_2.png) no-repeat top #636363;
+  -webkit-box-shadow: inset 0px 5px 9px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: inset 0px 5px 9px 0px rgba(0, 0, 0, 0.08); }
 
 .footer-mid-content {
-  -webkit-flex-basis: 20%;
-      -ms-flex-preferred-size: 20%;
-          flex-basis: 20%; }
+  -webkit-flex-basis: 19%;
+      -ms-flex-preferred-size: 19%;
+          flex-basis: 19%; }
   .footer-mid-content h5 {
     font-family: Telegrafico;
     font-size: 18px;
@@ -7274,7 +7275,10 @@ section > div {
     font-style: normal;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: white; }
+    color: white;
+    margin-bottom: 0;
+    margin-top: 3px;
+    line-height: 22px; }
   .footer-mid-content p {
     font-family: Terminal Dosis Book;
     font-size: 14px;
@@ -7283,9 +7287,13 @@ section > div {
     line-height: 20px;
     letter-spacing: 0.03em;
     color: #7d7253;
-    color: #c9c9c9; }
+    color: #c9c9c9;
+    line-height: 24px;
+    margin-top: 2px;
+    margin-left: 1px; }
   .footer-mid-content ul {
-    padding-left: 0; }
+    padding-left: 0;
+    margin-top: 2px; }
     .footer-mid-content ul li {
       list-style: none; }
       .footer-mid-content ul li a {
@@ -7300,6 +7308,30 @@ section > div {
         color: #c9c9c9; }
         .footer-mid-content ul li a:hover {
           text-decoration: none; }
+  .footer-mid-content:nth-child(2) h5 {
+    margin-left: 14px; }
+  .footer-mid-content:nth-child(2) ul {
+    margin-left: 15px; }
+  .footer-mid-content:nth-child(3) {
+    -webkit-flex-basis: 22%;
+        -ms-flex-preferred-size: 22%;
+            flex-basis: 22%; }
+    .footer-mid-content:nth-child(3) h5 {
+      margin-left: 29px; }
+    .footer-mid-content:nth-child(3) ul {
+      margin-left: 29px; }
+  .footer-mid-content:nth-child(4) {
+    -webkit-flex-basis: 18%;
+        -ms-flex-preferred-size: 18%;
+            flex-basis: 18%; }
+    .footer-mid-content:nth-child(4) h5 {
+      margin-left: 14px; }
+    .footer-mid-content:nth-child(4) ul {
+      margin-left: 15px; }
+  .footer-mid-content:nth-child(5) h5 {
+    margin-left: 39px; }
+  .footer-mid-content:nth-child(5) ul {
+    margin-left: 39px; }
 
 @font-face {
   font-family: "Chelsea Market";
