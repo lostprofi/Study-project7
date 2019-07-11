@@ -6936,29 +6936,26 @@ section > div {
           padding: 0 3px 1px 5px; }
 
 #toggle-featured {
-  display: none; }
-  #toggle-featured:checked ~ .featured-toggle-container {
-    height: 275px;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-  #toggle-featured:checked ~ .latest-toggle-container {
-    height: 0px !important;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-  #toggle-featured:checked ~ div .main-btn-border .featured-toggle-btn .plus {
-    display: none; }
-  #toggle-featured:checked ~ div .main-btn-border .latest-toggle-btn .plus {
-    display: block !important; }
+  display: none;
+  /*&:checked ~ .featured-toggle-container {
+        height: 275px;
+        transition: 1s;
+        display: flex;
+    }
+    
+    &:checked ~ .latest-toggle-container {//added not toolate
+        height: 0px !important;
+        transition: 1s;
+        display: flex;
+    }
+    
+    &:checked ~ div .main-btn-border .featured-toggle-btn .plus {
+        display: none;
+    }
+    
+    &:checked ~ div .main-btn-border .latest-toggle-btn .plus {//added not toolate
+        display: block !important;
+    }*/ }
 
 .swiper-container[data-products="brands"] {
   margin-bottom: 8px; }
@@ -7077,18 +7074,16 @@ section > div {
     outline: none; }
 
 #toggle-latest {
-  display: none; }
-  #toggle-latest:checked ~ .latest-toggle-container {
-    height: 275px;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-  #toggle-latest:checked ~ div .main-btn-border .latest-toggle-btn .plus {
-    display: none; }
+  display: none;
+  /*&:checked ~ .latest-toggle-container{
+       height: 275px;
+       transition: 1s;
+       display: flex;
+    }
+        
+    &:checked ~ div .main-btn-border .latest-toggle-btn .plus {
+        display: none;
+    }*/ }
 
 .modal-container {
   display: none;

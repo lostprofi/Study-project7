@@ -293,7 +293,7 @@ section {
 #toggle-featured {
     display: none;
     
-    &:checked ~ .featured-toggle-container {
+    /*&:checked ~ .featured-toggle-container {
         height: 275px;
         transition: 1s;
         display: flex;
@@ -311,7 +311,7 @@ section {
     
     &:checked ~ div .main-btn-border .latest-toggle-btn .plus {//added not toolate
         display: block !important;
-    }
+    }*/
     
 }
 
@@ -496,7 +496,7 @@ section {
 #toggle-latest {
     display: none;
     
-    &:checked ~ .latest-toggle-container{
+    /*&:checked ~ .latest-toggle-container{
        height: 275px;
        transition: 1s;
        display: flex;
@@ -504,7 +504,7 @@ section {
         
     &:checked ~ div .main-btn-border .latest-toggle-btn .plus {
         display: none;
-    }
+    }*/
 }
 
 
