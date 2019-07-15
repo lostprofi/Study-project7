@@ -322,52 +322,83 @@ let btnTglLtst = document.querySelector('.latest-toggle-btn');
 let ftrdTglCont = document.querySelector('.featured-toggle-container');
 let ltstTglCont = document.querySelector('.latest-toggle-container');
 
-
-
 /*toggle function for featured container*/
+ 
+let plusArr = document.querySelectorAll('.plus');
 
-let tglDownFtrdFunc = () => {
-       ftrdTglCont.style.height = '275px';
-       ftrdTglCont.style.display = "flex"; 
-    
-    let tglUpFtrdFunc = () => {
+ 
+     
+     let tglUpFtrdFunc = () => {
        ftrdTglCont.style.height = 0;
         btnTglFtrd.removeEventListener('click', tglUpFtrdFunc);
         btnTglFtrd.addEventListener('click', tglDownFtrdFunc);
-          
+         plusArr[0].style.display = "block";
+        plusArr[1].style.display = "block";
     }
+     
+
+    let tglDownFtrdFunc = () => {
+       ftrdTglCont.style.height = '275px';
+       ftrdTglCont.style.display = "flex"; 
     
     btnTglFtrd.removeEventListener('click', tglDownFtrdFunc);
-    btnTglFtrd.addEventListener('click', tglUpFtrdFunc)
-}
-
-
-
-btnTglFtrd.addEventListener('click', tglDownFtrdFunc);
-
+    btnTglFtrd.addEventListener('click', tglUpFtrdFunc);
+    
+    ltstTglCont.style.height = 0;
+    btnTglLtst.removeEventListener('click', tglUpLtstFunc);
+    btnTglLtst.addEventListener('click', tglDownLtstFunc);
+        
+    plusArr[0].style.display = "none";
+    plusArr[1].style.display = "none";    
+        
+    plusArr[2].style.display = "block";
+    plusArr[3].style.display = "block";    
+        
+    }
+ 
+ 
 
 
 /*toggle function for latest container*/
 
-let tglDownLtstFunc = () => {
-       ltstTglCont.style.height = '275px';
-       ltstTglCont.style.display = "flex"; 
+
+
     
     let tglUpLtstFunc = () => {
         ltstTglCont.style.height = 0;
         btnTglLtst.removeEventListener('click', tglUpLtstFunc);
         btnTglLtst.addEventListener('click', tglDownLtstFunc);
-          
+        
+        plusArr[2].style.display = "block";
+        plusArr[3].style.display = "block";
     }
+
+let tglDownLtstFunc = () => {
+       ltstTglCont.style.height = '275px';
+       ltstTglCont.style.display = "flex"; 
     
     btnTglLtst.removeEventListener('click', tglDownLtstFunc);
-    btnTglLtst.addEventListener('click', tglUpLtstFunc)
-}
+    btnTglLtst.addEventListener('click', tglUpLtstFunc);
+    
+    ftrdTglCont.style.height = 0;
+    btnTglFtrd.removeEventListener('click', tglUpFtrdFunc);
+    btnTglFtrd.addEventListener('click', tglDownFtrdFunc);
+    
+    plusArr[2].style.display = "none";
+    plusArr[3].style.display = "none";
+    
+    plusArr[0].style.display = "block";
+    plusArr[1].style.display = "block";
+    
+    }
+
 
 
 
 btnTglFtrd.addEventListener('click', tglDownFtrdFunc);
 btnTglLtst.addEventListener('click', tglDownLtstFunc);
+
+
 
 
 
