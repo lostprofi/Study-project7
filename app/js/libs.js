@@ -324,7 +324,7 @@ let ltstTglCont = document.querySelector('.latest-toggle-container');
 
 /*toggle function for featured container*/
  
-let plusArr = document.querySelectorAll('.plus');
+
 
  
      
@@ -332,10 +332,8 @@ let plusArr = document.querySelectorAll('.plus');
        ftrdTglCont.style.height = 0;
         btnTglFtrd.removeEventListener('click', tglUpFtrdFunc);
         btnTglFtrd.addEventListener('click', tglDownFtrdFunc);
-         plusArr[0].style.display = "block";
-        plusArr[1].style.display = "block";
+         
     }
-     
 
     let tglDownFtrdFunc = () => {
        ftrdTglCont.style.height = '275px';
@@ -348,11 +346,9 @@ let plusArr = document.querySelectorAll('.plus');
     btnTglLtst.removeEventListener('click', tglUpLtstFunc);
     btnTglLtst.addEventListener('click', tglDownLtstFunc);
         
-    plusArr[0].style.display = "none";
-    plusArr[1].style.display = "none";    
+    
         
-    plusArr[2].style.display = "block";
-    plusArr[3].style.display = "block";    
+        
         
     }
  
@@ -369,8 +365,6 @@ let plusArr = document.querySelectorAll('.plus');
         btnTglLtst.removeEventListener('click', tglUpLtstFunc);
         btnTglLtst.addEventListener('click', tglDownLtstFunc);
         
-        plusArr[2].style.display = "block";
-        plusArr[3].style.display = "block";
     }
 
 let tglDownLtstFunc = () => {
@@ -384,12 +378,6 @@ let tglDownLtstFunc = () => {
     btnTglFtrd.removeEventListener('click', tglUpFtrdFunc);
     btnTglFtrd.addEventListener('click', tglDownFtrdFunc);
     
-    plusArr[2].style.display = "none";
-    plusArr[3].style.display = "none";
-    
-    plusArr[0].style.display = "block";
-    plusArr[1].style.display = "block";
-    
     }
 
 
@@ -397,9 +385,6 @@ let tglDownLtstFunc = () => {
 
 btnTglFtrd.addEventListener('click', tglDownFtrdFunc);
 btnTglLtst.addEventListener('click', tglDownLtstFunc);
-
-
-
 
 
 

@@ -38,7 +38,7 @@ gulp.task('sass', function(){
 //concat & uglifyjs task
 
 gulp.task('scripts', function(){
-  return gulp.src(['app/js/libs.js', 'node_modules/swiper/dist/js/swiper.js','node_modules/jquery/dist/jquery.js', 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js'])//берем нужные нам js файлы
+  return gulp.src(['app/js/libs.js', 'node_modules/swiper/dist/js/swiper.js','node_modules/jquery/dist/jquery.js', 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js', 'app/js/crossbrowsers.js'])//берем нужные нам js файлы
   .pipe(concat('libs.min.js'))//собираем их в один файл libs.min.js
   .pipe(babel({
             presets: ['@babel/env'],

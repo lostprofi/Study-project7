@@ -101,36 +101,39 @@ aside {
 
         .aside-pagination{
             position: absolute;
-            bottom: 28px; 
+            bottom: 34px; 
             left: 38px;
             z-index: 10;
-            display: inline-block;
+            display: flex;
+            flex-flow: row;
             
-            input[type = "radio"]{
-                appearance: none;
+            p[data = "pagination"]{
+                appearence: none;
                 border-radius: 50%;
                 width: 10px;
                 height: 10px;
                 border: 2px solid white;
                 outline: none;
+                display: inherit;
+                
                 
                 &:nth-child(1){
-                    margin-right: 2px;
+                    margin-right: 6px;
                     animation: pag 81s cubic-bezier(1, 0, 0, 0.73) infinite;
                 }
                 
                 &:nth-child(2){
-                    margin-right: 1px;
+                    margin-right: 6px;
                     animation: pag-1 81s cubic-bezier(1, 0, 0, 0.73) infinite;
                 }
                 
                 &:nth-child(3){
-                    margin-right: 2px;
+                    margin-right: 6px;
                     animation: pag-2 81s cubic-bezier(1, 0, 0, 0.73) infinite;
                 }
                 
                 &:nth-child(4){
-                    margin-right: 1px;
+                    margin-right: 6px;
                     animation: pag-3 81s cubic-bezier(1, 0, 0, 0.73) infinite;
                 }
                 
