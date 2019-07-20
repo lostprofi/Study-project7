@@ -322,6 +322,9 @@ let btnTglLtst = document.querySelector('.latest-toggle-btn');
 let ftrdTglCont = document.querySelector('.featured-toggle-container');
 let ltstTglCont = document.querySelector('.latest-toggle-container');
 
+let plusMassive = document.querySelectorAll('.plus');
+
+
 /*toggle function for featured container*/
  
 
@@ -332,6 +335,9 @@ let ltstTglCont = document.querySelector('.latest-toggle-container');
        ftrdTglCont.style.height = 0;
         btnTglFtrd.removeEventListener('click', tglUpFtrdFunc);
         btnTglFtrd.addEventListener('click', tglDownFtrdFunc);
+        
+         plusMassive[0].style.display = "block";
+            plusMassive[1].style.display = "block";
          
     }
 
@@ -345,6 +351,12 @@ let ltstTglCont = document.querySelector('.latest-toggle-container');
     ltstTglCont.style.height = 0;
     btnTglLtst.removeEventListener('click', tglUpLtstFunc);
     btnTglLtst.addEventListener('click', tglDownLtstFunc);
+        
+    plusMassive[0].style.display = "none";
+    plusMassive[1].style.display = "none";
+        
+    plusMassive[2].style.display = "block";
+    plusMassive[3].style.display = "block";    
         
     
         
@@ -365,6 +377,9 @@ let ltstTglCont = document.querySelector('.latest-toggle-container');
         btnTglLtst.removeEventListener('click', tglUpLtstFunc);
         btnTglLtst.addEventListener('click', tglDownLtstFunc);
         
+        plusMassive[2].style.display = "block";
+        plusMassive[3].style.display = "block";
+        
     }
 
 let tglDownLtstFunc = () => {
@@ -378,10 +393,16 @@ let tglDownLtstFunc = () => {
     btnTglFtrd.removeEventListener('click', tglUpFtrdFunc);
     btnTglFtrd.addEventListener('click', tglDownFtrdFunc);
     
+    plusMassive[0].style.display = "block";
+    plusMassive[1].style.display = "block";
+    
+    plusMassive[2].style.display = "none";
+    plusMassive[3].style.display = "none";
+    
     }
 
 
-
+console.log(plusMassive);
 
 btnTglFtrd.addEventListener('click', tglDownFtrdFunc);
 btnTglLtst.addEventListener('click', tglDownLtstFunc);

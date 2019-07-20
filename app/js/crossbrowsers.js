@@ -36,7 +36,6 @@ switch(browser){
         
     case 'Google Chrome':
         console.log(1);
-        document.write('<style>.footer-top {background: red;  background-size: cover;    box-shadow: 0px 5px 0px 0px rgba(222, 213, 183, 0.92);}</style>');
         break
     
     case 'Firefox':
