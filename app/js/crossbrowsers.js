@@ -2,8 +2,6 @@ let browserName =()=> {
     
     let browserId = navigator.userAgent;
     
-    console.log(browserId);
-    
     if (browserId.search(/Chrome/)!=-1){
         return 'Google Chrome';
     }
@@ -20,9 +18,9 @@ let browserName =()=> {
         return 'Safari';
     }
     
-    else if (browserId.search(/MSIE/)!==-1){
+    else if (document.documentMode || /Edge/.test(browserId)) {/*здесь Edge c помощью метода test сопоставляется со значением browserId, если ок возвращает true*/
         return 'Internet Explorer';
-    }
+}
     
     else {
         console.log('Unknown browser');
@@ -35,12 +33,16 @@ let browser = browserName();
 switch(browser){
         
     case 'Google Chrome':
-        console.log(1);
+        console.log(1);        
         break
     
     case 'Firefox':
         console.log(2);
-         
+        
+        document.querySelectorAll('.product-btn').forEach((e)=>{
+            e.style.paddingRight = "18px";
+        })    
+        
         break
         
     case 'Opera':
@@ -54,9 +56,26 @@ switch(browser){
     case 'Internet Explorer':
         console.log(5);
         
+        //Polifill forEach for IE
+        
+        if (window.NodeList && !NodeList.prototype.forEach) {
+            NodeList.prototype.forEach = Array.prototype.forEach;
+        }
+        
+        document.querySelectorAll('.product-btn').forEach(e=>{
+            e.style.paddingRight = "18px";
+        })
+        
+        
+        
+        
+        
+        
+        
         break
         
     case 'Unknown browser':    
         console.log('Unknown browser')
+        
         break       
 }

@@ -255,7 +255,7 @@ section {
                 content: "";
                 position: absolute;
                 top: 0; right: 0; bottom: 0; left: 0;
-                background: url("../../img/price-shine.png") no-repeat;
+                background: url("../img/price-shine.png") no-repeat;
             }
             
             >p{
@@ -542,6 +542,7 @@ section {
 .product[data-lazy = "lazy-style"]{
     margin: 22px 10px 0 10px;
     flex-basis: 22.9%;
+    
 }
 
 .lazy-btn-border{
@@ -570,8 +571,6 @@ section {
     line-height: 13px;
     text-align: center;
 }
-
-
 
 
 

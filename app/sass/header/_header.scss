@@ -72,10 +72,15 @@
         .cart {
             position: relative;
             @include btn($cart...);
-            cursor: pointer;
+            cursor: pointer;           
+            
+            &:hover{
+                padding-bottom: 4px;
+            }
             
             &:focus{
                 outline: none;
+                
             }
             
             img{
@@ -108,7 +113,7 @@
 
 
 .header-middle {
-    background: url(../../img/header-middle-texture.png) rgb(251, 242, 211);
+    background: url("../img/header-middle-texture.png") rgb(251, 242, 211); 
     background-size: cover;
     box-shadow: 0px 4px 0px 0px rgb(241, 233, 207);
 }
