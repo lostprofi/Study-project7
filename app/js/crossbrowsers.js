@@ -66,6 +66,8 @@ switch(browser){
             e.style.paddingRight = "18px";
         })
         
+        document.querySelector('.input-group-text').style.paddingLeft = '10px';
+        
         
         
         

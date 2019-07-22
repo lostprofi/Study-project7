@@ -541,7 +541,12 @@ section {
 
 .product[data-lazy = "lazy-style"]{
     margin: 22px 10px 0 10px;
-    flex-basis: 22.9%;
+    width: 22.9%;
+    flex-basis: auto;
+    
+    >.product-photo, >.product-footer, >p {
+        width: 100%;
+    }
     
 }
 

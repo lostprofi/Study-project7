@@ -13,7 +13,7 @@
       max-width: 720px; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 950px; } }
+      max-width: 959px; } }
   @media (min-width: 1200px) {
     .container {
       max-width: 960px; } }
@@ -7116,9 +7116,12 @@ section > div {
 
 .product[data-lazy="lazy-style"] {
   margin: 22px 10px 0 10px;
-  -webkit-flex-basis: 22.9%;
-      -ms-flex-preferred-size: 22.9%;
-          flex-basis: 22.9%; }
+  width: 22.9%;
+  -webkit-flex-basis: auto;
+      -ms-flex-preferred-size: auto;
+          flex-basis: auto; }
+  .product[data-lazy="lazy-style"] > .product-photo, .product[data-lazy="lazy-style"] > .product-footer, .product[data-lazy="lazy-style"] > p {
+    width: 100%; }
 
 .lazy-btn-border {
   padding: 1px;
@@ -7388,7 +7391,7 @@ section > div {
 
 @font-face {
   font-family: "Myriad Pro";
-  src: url(../fonts/Myriad_Pro_Regular.otf) format("opentype");
+  src: url(../fonts/Myriad_Pro_Regular.ttf) format("truetype");
   font-display: block; }
 
 body {
