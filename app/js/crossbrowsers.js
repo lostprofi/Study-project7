@@ -68,12 +68,10 @@ switch(browser){
         
         document.querySelector('.input-group-text').style.paddingLeft = '10px';
         
-        
-        
-        
-        
-        
-        
+        document.querySelectorAll('.add-comp-wish[data-ie = "paddingRight"]').forEach(e=>{
+            e.style.paddingRight = "18px";
+        })
+                
         break
         
     case 'Unknown browser':    
