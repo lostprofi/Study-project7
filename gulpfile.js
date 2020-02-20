@@ -80,7 +80,7 @@ gulp.task('css-import', () => {
 gulp.task('watch', ['browser-sync', 'css-import','sass', 'scripts'], function(){
   gulp.watch('app/sass/**/*.scss', ['sass'])//наблюдаем за SCSS файлом, после его изменения компилируем
   gulp.watch('app/.html', browserSync.reload)// наблюдение за html, после изменения обновляем браузер
-  gulp.watch('app/js/**/*.js', ['scripts']);// наблюдение за js, после изменения обновляем браузер
+  gulp.watch('app/js/libs.js', ['scripts']);// наблюдение за js, после изменения обновляем браузер
 });
 
 //task удаления папки dist
